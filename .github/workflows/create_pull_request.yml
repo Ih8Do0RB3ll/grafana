@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        ref: ${{ github.ref }}
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
@@ -19,7 +21,7 @@ jobs:
         commit-message: Автоматический коммит
         title: 'Изменения в дашбордах'
         body: 'изменения в дашбордах'
-        branch: 'main'
+        branch: ${{ github.head_ref }}
         base: 'main'
         delete-branch: true
         labels: |
