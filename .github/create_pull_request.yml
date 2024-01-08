@@ -3,7 +3,7 @@ name: Create Pull Request
 on:
   push:
     branches:
-      - "review/изменения дашбордов" # Замените на имя вашей ветки
+      - "review/*"
 
 jobs:
   create_pull_request:
@@ -17,9 +17,9 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: Автоматический коммит
-        title: 'Новый Pull Request'
-        body: 'Описание Pull Request'
-        branch: 'имя_ветки_для_pull_request'
+        title: 'Изменения в дашбордах'
+        body: 'изменения в дашбордах'
+        branch: 'main'
         delete-branch: true
         labels: |
           automated pr
