@@ -19,7 +19,7 @@ jobs:
         commit-message: 'Автоматический коммит'
         title: 'Изменения в дашбордах'
         body: 'изменения в дашбордах'
-        branch: 'review'
+        branch: 'review/*'
         base: 'main'
         delete-branch: true
         labels: |
