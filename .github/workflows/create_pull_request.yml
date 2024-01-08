@@ -23,4 +23,3 @@ jobs:
         delete-branch: true
         labels: |
           automated pr
-
