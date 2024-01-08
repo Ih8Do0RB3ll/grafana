@@ -3,24 +3,24 @@ name: Create Pull Request
 on:
   push:
     branches:
-      - "review/*"  # Замените на имя вашей ветки
+      - "review/*"
 
 jobs:
-  create-pull-request:
+  create_pull_request:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Автоматический коммит
-          title: Автоматически созданный Pull Request
-          body: |
-            Обновление дашбордов Grafana.
-          branch: main  # Замените на имя ветки, в которую будет создаваться PR
-          delete-branch: true  # Удалять ветку после мержа PR
-          draft: false
-
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Автоматический коммит
+        title: 'Изменения в дашбордах'
+        body: 'изменения в дашбордах'
+        branch: 'onReview'
+        base: 'main'
+        delete-branch: true
+        labels: |
+          automated pr
