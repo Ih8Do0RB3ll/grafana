@@ -17,10 +17,9 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: Автоматический коммит
-        title: 'Изменения в дашбордах'
-        body: 'изменения в дашбордах'
-        branch: 'main'
+        title: 'Новый Pull Request'
+        body: 'Описание Pull Request'
+        branch: 'main' # или 'master'
         delete-branch: true
         labels: |
           automated pr
-
