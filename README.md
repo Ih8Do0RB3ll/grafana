@@ -1,2 +1,1 @@
-grafana dashboards and github actions
-last test 40
+# Репозиторий для хранения дашбордов Grafana
