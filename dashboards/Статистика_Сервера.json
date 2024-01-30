@@ -10,10 +10,10 @@
         "url": "/d/rYdddlPWk/statistika-servera",
         "expires": "0001-01-01T00:00:00Z",
         "created": "2024-01-08T15:57:53Z",
-        "updated": "2024-01-09T03:32:51Z",
+        "updated": "2024-01-30T11:57:55Z",
         "updatedBy": "admin",
         "createdBy": "admin",
-        "version": 4,
+        "version": 5,
         "hasAcl": false,
         "isFolder": false,
         "folderId": 0,
@@ -36,29 +36,6 @@
         }
     },
     "dashboard": {
-        "annotations": {
-            "list": [
-                {
-                    "$$hashKey": "object:1058",
-                    "builtIn": 1,
-                    "datasource": {
-                        "type": "datasource",
-                        "uid": "grafana"
-                    },
-                    "enable": true,
-                    "hide": true,
-                    "iconColor": "rgba(0, 211, 255, 1)",
-                    "name": "Annotations & Alerts",
-                    "target": {
-                        "limit": 100,
-                        "matchAny": false,
-                        "tags": [],
-                        "type": "dashboard"
-                    },
-                    "type": "dashboard"
-                }
-            ]
-        },
         "editable": true,
         "fiscalYearStartMonth": 0,
         "gnetId": 1860,
@@ -2591,7 +2568,11 @@
                     "type": "datasource"
                 },
                 {
-                    "current": {},
+                    "current": {
+                        "selected": false,
+                        "text": "node_exporter",
+                        "value": "node_exporter"
+                    },
                     "datasource": {
                         "type": "prometheus",
                         "uid": "cfee671c-b54a-4eab-87ff-e321d013df6c"
@@ -2617,7 +2598,11 @@
                     "useTags": false
                 },
                 {
-                    "current": {},
+                    "current": {
+                        "selected": false,
+                        "text": "31.28.27.21:9100",
+                        "value": "31.28.27.21:9100"
+                    },
                     "datasource": {
                         "type": "prometheus",
                         "uid": "cfee671c-b54a-4eab-87ff-e321d013df6c"
@@ -2697,7 +2682,7 @@
         "timezone": "browser",
         "title": "\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0430 \u0421\u0435\u0440\u0432\u0435\u0440\u0430",
         "uid": "rYdddlPWk",
-        "version": 4,
+        "version": 5,
         "weekStart": ""
     }
 }
