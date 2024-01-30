@@ -10,10 +10,10 @@
         "url": "/d/549c2bf8936f7767ea6ac47c47b00f2a/mysql-dashboard",
         "expires": "0001-01-01T00:00:00Z",
         "created": "2024-01-08T15:33:43Z",
-        "updated": "2024-01-08T15:56:06Z",
+        "updated": "2024-01-30T11:59:28Z",
         "updatedBy": "admin",
         "createdBy": "admin",
-        "version": 2,
+        "version": 5,
         "hasAcl": false,
         "isFolder": false,
         "folderId": 0,
@@ -36,23 +36,7 @@
         }
     },
     "dashboard": {
-        "annotations": {
-            "list": [
-                {
-                    "builtIn": 1,
-                    "datasource": {
-                        "type": "datasource",
-                        "uid": "grafana"
-                    },
-                    "enable": true,
-                    "hide": true,
-                    "iconColor": "rgba(0, 211, 255, 1)",
-                    "name": "Annotations & Alerts",
-                    "type": "dashboard"
-                }
-            ]
-        },
-        "description": "",
+        "description": "\u0414\u0430\u0448\u0431\u043e\u0440\u0434 \u0431\u0430\u0437\u044b \u0434\u0430\u043d\u043d\u044b\u0445 MySQL ",
         "editable": true,
         "fiscalYearStartMonth": 0,
         "gnetId": 14057,
@@ -1387,7 +1371,7 @@
                     "current": {
                         "selected": false,
                         "text": "prometheus",
-                        "value": "prometheus"
+                        "value": "cfee671c-b54a-4eab-87ff-e321d013df6c"
                     },
                     "hide": 0,
                     "includeAll": false,
@@ -1403,11 +1387,9 @@
                 },
                 {
                     "current": {
-                        "selected": true,
-                        "text": "hosted-grafana/cloudsql-proxy-mysql-exporter",
-                        "value": [
-                            "hosted-grafana/cloudsql-proxy-mysql-exporter"
-                        ]
+                        "selected": false,
+                        "text": "All",
+                        "value": "$__all"
                     },
                     "datasource": {
                         "type": "prometheus",
@@ -1432,8 +1414,9 @@
                 {
                     "current": {
                         "selected": true,
-                        "tags": [],
-                        "text": "All",
+                        "text": [
+                            "All"
+                        ],
                         "value": [
                             "$__all"
                         ]
@@ -1498,7 +1481,7 @@
         "timezone": "",
         "title": "MySQL Dashboard",
         "uid": "549c2bf8936f7767ea6ac47c47b00f2a",
-        "version": 2,
+        "version": 5,
         "weekStart": ""
     }
 }
